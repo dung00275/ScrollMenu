@@ -171,8 +171,6 @@ class ScrollMenuView: UIView {
         }
         
         if view.tag - kTagLabel != currentIndex {
-            currentIndex = view.tag - kTagLabel
-            print("current Index : \(currentIndex)")
             self.delegate?.scrollMenuDidSelectAtIndex?(self, index: currentIndex)
         }
         
@@ -208,9 +206,11 @@ extension ScrollMenuView{
     
     func selectItemWithAnimation(index:Int,animate:Bool)
     {
+        
         guard let viewSelect = scrollView.viewWithTag(index + kTagLabel) else{
             return
         }
+        currentIndex = index
        
         let currentWidth = self.scrollView.contentOffset.x + self.bounds.width
         let needMove = viewSelect.frame.origin.x + viewSelect.frame.size.width > currentWidth || viewSelect.frame.origin.x < self.scrollView.contentOffset.x
