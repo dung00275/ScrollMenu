@@ -171,7 +171,7 @@ class ScrollMenuView: UIView {
         }
         
         if view.tag - kTagLabel != currentIndex {
-            self.delegate?.scrollMenuDidSelectAtIndex?(self, index: currentIndex)
+            self.delegate?.scrollMenuDidSelectAtIndex?(self, index: view.tag - kTagLabel)
         }
         
         self.selectItemWithAnimation(view.tag - kTagLabel, animate: true)
