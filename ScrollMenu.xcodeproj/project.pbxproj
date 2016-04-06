@@ -14,6 +14,7 @@
 		E91DAB871CB49FF5009DF58C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E91DAB851CB49FF5009DF58C /* LaunchScreen.storyboard */; };
 		E91DAB921CB49FF6009DF58C /* ScrollMenuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DAB911CB49FF6009DF58C /* ScrollMenuTests.swift */; };
 		E91DAB9D1CB49FF6009DF58C /* ScrollMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DAB9C1CB49FF6009DF58C /* ScrollMenuUITests.swift */; };
+		E91DABAB1CB4A00D009DF58C /* ScrollMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DABAA1CB4A00D009DF58C /* ScrollMenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E91DAB981CB49FF6009DF58C /* ScrollMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrollMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91DAB9C1CB49FF6009DF58C /* ScrollMenuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollMenuUITests.swift; sourceTree = "<group>"; };
 		E91DAB9E1CB49FF6009DF58C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E91DABAA1CB4A00D009DF58C /* ScrollMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollMenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E91DAB831CB49FF5009DF58C /* Assets.xcassets */,
 				E91DAB851CB49FF5009DF58C /* LaunchScreen.storyboard */,
 				E91DAB881CB49FF5009DF58C /* Info.plist */,
+				E91DABAA1CB4A00D009DF58C /* ScrollMenuView.swift */,
 			);
 			path = ScrollMenu;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E91DAB7F1CB49FF5009DF58C /* ViewController.swift in Sources */,
+				E91DABAB1CB4A00D009DF58C /* ScrollMenuView.swift in Sources */,
 				E91DAB7D1CB49FF5009DF58C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dungvh.ScrollMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScrollMenu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dungvh.ScrollMenu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
